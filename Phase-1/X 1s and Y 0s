@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+#define MOD 1000000007
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int x;
+        int y;
+        cin>>x>>y;
+        int number=(((1LL<<x)-1)*(1LL<<y))%MOD;
+        cout<<number<<endl;
+    } 
+    return 0;
+}
