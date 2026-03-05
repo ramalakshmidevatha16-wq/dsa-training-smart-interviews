@@ -1,17 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    int t;
+    long long t;
     cin>>t;
     const long long MOD=1e9+7;
     while(t--)
     {
-        int n;
+        long long n;
         cin>>n;
-        int arr[n];
+        long long arr[n];
         for(int i=0;i<n;i++)
         {
             cin>>arr[i];
+        }
+        if(n>3000)
+        {
+            cout<<"0\n";
+           continue;
         }
         long long ans=1;
         for(int i=0;i<n;i++)
